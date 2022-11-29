@@ -1,6 +1,6 @@
 # Watermeter-Home-Assistant
 
-I was looking for a water meter sensor based on a proximity sensor for integration into Home Assistant. I found many solutions based on ESPHome which is great however I wanted to ensure my water consumption value was stored independant from Home Assistant. So in case of a failure of Home assistant, the sensor keeps on counting. Therefore I've created this code which was largly based on the repository of Jordan Crubin https://github.com/jordancrubin/watermeter but simplified, made working on my Wemos D1 mini and storing the meter value to the EEPROM of the ESP8266 (to ensure in case of power failue the meter value is retained).
+I was looking for a water meter sensor based on a proximity sensor for integration into Home Assistant. I found many solutions based on ESPHome which is great however I wanted to ensure my water consumption value was stored independant from Home Assistant. So in case of a failure of Home assistant, the sensor keeps on counting. Therefore I've created this code which was largly based on the repository of Jordan Crubin https://github.com/jordancrubin/watermeter but simplified, made working on my Wemos D1 mini and storing the meter value to the EEPROM of the ESP8266 (to ensure in case of power failure the meter value is retained).
 
 Used parts:
 - 1x Wemos D1 mini
@@ -33,4 +33,4 @@ mqtt:
  ```     
  And presented the 2 sensors in my dashboard.
  
- DISCLAIMER: I am an amature in coding but since I could not find a proper solution for my idea I am just sharing this.
+ DISCLAIMER: I am an amature in coding so but since this is a  proper solution for my idea I am sharing this.
