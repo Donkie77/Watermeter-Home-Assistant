@@ -11,7 +11,7 @@ Used parts:
 The code contains some settings like WiFI, MQTT, GPIO pin, Pulse Factor and Start value
 
 In Home Assistant I've used the Mosquito MQTT broker and added the following MQTT sensors in my configuration.yaml:
-
+```
 ### MQTT BROKER SENSORS ###
 mqtt:
   sensor:
@@ -30,7 +30,7 @@ mqtt:
       force_update: true
       state_class: measurement
       value_template: '{{value | round(1) }}'
-      
+ ```     
  And presented the 2 sensors in my dashboard.
  
  DISCLAIMER: I am an amature in coding but since I could not find a proper solution for my idea I am just sharing this.
