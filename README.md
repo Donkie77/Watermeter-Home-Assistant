@@ -19,14 +19,12 @@ mqtt:
       state_topic: "WATERMETER/WATER/VOLUME"
       unit_of_measurement: "m³"
       icon: "mdi:water"
-      unique_id: 33d54546-13d3-4a6c-90a9-9a198d4c4a06
       force_update: true
       state_class: total_increasing
     - name: "Water Flow"
       state_topic: "WATERMETER/WATER/FLOW"
       unit_of_measurement: "L/min"
       icon: "mdi:water-sync"
-      unique_id: e7d34b6b-2fca-4e10-b9ea-f2b559e8de56
       force_update: true
       state_class: measurement
       value_template: '{{value | round(1) }}'
